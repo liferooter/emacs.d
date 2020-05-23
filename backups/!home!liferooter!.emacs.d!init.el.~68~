@@ -1,3 +1,10 @@
+;;; init.el --- Initialize Emacs custom modules and customization
+
+;;; Commentary:
+;; Use this file only to initialize main modules
+
+;;; Code:
+
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 
 (require 'my_init)
@@ -36,22 +43,25 @@
  '(dashboard-startup-banner 'logo)
  '(doom-modeline-github t)
  '(doom-modeline-mode t)
- '(global-diff-hl-mode t)
+ '(global-diff-hl-mode nil)
  '(global-flycheck-mode t)
  '(helm--remap-mouse-mode t)
  '(helm-adaptive-mode t nil (helm-adaptive))
  '(helm-allow-mouse t)
  '(helm-always-two-windows nil)
- '(helm-apropos-fuzzy-match t)
  '(helm-autoresize-mode t)
  '(helm-buffers-fuzzy-matching t)
- '(helm-completion-style 'helm-fuzzy)
+ '(helm-completion-style 'helm)
  '(helm-etags-fuzzy-match t)
+ '(helm-ff-fuzzy-matching t)
  '(helm-full-frame t)
+ '(helm-lisp-fuzzy-completion t)
+ '(helm-locate-fuzzy-match t)
  '(helm-mode t)
+ '(helm-mode-fuzzy-match t)
  '(nlinum-highlight-current-line t)
  '(package-selected-packages
-   '(diff-hl helm projectile nlinum solarized-theme solaire-mode flycheck dashboard doom-themes doom-modeline neotree))
+   '(go-mode diff-hl helm projectile nlinum solarized-theme solaire-mode flycheck dashboard doom-themes doom-modeline neotree))
  '(scroll-bar-mode nil)
  '(solaire-global-mode t))
 (custom-set-faces
@@ -60,3 +70,6 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "JetBrains Mono" :foundry "JB  " :slant normal :weight normal :height 128 :width normal)))))
+
+(provide 'init)
+;;; init.el ends here

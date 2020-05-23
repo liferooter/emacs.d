@@ -14,6 +14,11 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(company-idle-delay 0)
+ '(company-show-numbers ''t)
+ '(company-tooltip-align-annotations t)
+ '(company-tooltip-flip-when-above t)
+ '(company-tooltip-idle-delay 0)
  '(current-language-environment "UTF-8")
  '(cursor-type 'bar)
  '(custom-enabled-themes '(doom-one))
@@ -43,12 +48,16 @@
  '(dashboard-startup-banner 'logo)
  '(doom-modeline-github t)
  '(doom-modeline-mode t)
+ '(electric-layout-mode t)
+ '(electric-pair-mode t)
  '(global-diff-hl-mode nil)
  '(global-flycheck-mode t)
  '(helm-mode t)
  '(nlinum-highlight-current-line t)
  '(package-selected-packages
    '(go-mode diff-hl helm projectile nlinum solarized-theme solaire-mode flycheck dashboard doom-themes doom-modeline neotree))
+ '(prog-mode-hook
+   '(company-mode flycheck-mode nlinum-mode flycheck-mode hl-line-mode))
  '(scroll-bar-mode nil)
  '(solaire-global-mode t))
 (custom-set-faces

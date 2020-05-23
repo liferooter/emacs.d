@@ -23,12 +23,9 @@
 
 ;; Nlinum
 (require 'nlinum)
-(add-hook 'prog-mode-hook 'nlinum-mode)
-(add-hook 'nlinum-mode-hook 'hl-line-mode)
 
 ;; Flycheck
 (require 'flycheck)
-(add-hook 'prog-mode-hook 'flycheck-mode)
 
 ;; Dashboard
 (require 'dashboard)
@@ -44,8 +41,8 @@
 (global-set-key (kbd "C-x r b") 'helm-filtered-bookmarks)
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
 
-;; Diff-hl
-(require 'diff-hl)
+;; Company
+(require 'company)
 
 
 (provide 'my_packages)

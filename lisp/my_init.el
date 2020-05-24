@@ -1,3 +1,10 @@
+;;; my_init.el --- generic options and external modules including
+
+;;; Commentary:
+;;; Put all you imports here
+
+;;; Code:
+
 ;; Put all backups into one directory:
 (let ((backup-dir "~/.emacs.d/backups")
       (auto-saves-dir "~/.emacs.d/auto-saves/"))
@@ -20,3 +27,4 @@
 (require 'my_packages)
 
 (provide 'my_init)
+;;; my_init.el ends here

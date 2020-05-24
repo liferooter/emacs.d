@@ -41,6 +41,12 @@
 (require 'swiper)
 (global-set-key (kbd "C-s") 'swiper)
 
+;; Projectile
+(require 'projectile)
+(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+
+;; Diff hl
+(add-hook 'diff-hl-mode-hook 'diff-hl-flydiff-mode)
 
 
 (provide 'my_packages)

@@ -1,1 +1,1 @@
-nil
+("~/.emacs.d/" "~/Emacs Projects/gotanks/")

@@ -18,7 +18,7 @@
 ;; Doom themes
 (require 'doom-themes)
 (doom-themes-visual-bell-config)
-(doom-themes-neotree-config)
+(doom-themes-treemacs-config)
 (doom-themes-org-config)
 
 ;; Nlinum
@@ -30,10 +30,6 @@
 ;; Dashboard
 (require 'dashboard)
 (dashboard-setup-startup-hook)
-
-;; Neotree
-(require 'neotree)
-(global-set-key (kbd "C-x t") 'neotree-toggle)
 
 ;; Ivy
 (require 'ivy)
@@ -47,6 +43,27 @@
 
 ;; Diff hl
 (add-hook 'diff-hl-mode-hook 'diff-hl-flydiff-mode)
+
+;; Yasnippet
+(require 'yasnippet)
+(add-hook 'prog-mode-hook 'yas-minor-mode)
+
+;; Treemacs
+(require 'treemacs)
+(global-set-key (kbd "C-x t") 'treemacs)
+(define-key treemacs-mode-map (kbd "C-x C-f") 'treemacs-find-file)
+
+;; DAP Mode
+(require 'dap-python)
+(require 'dap-gdb-lldb)
+(require 'dap-go)
+
+;; LSP Mode
+(require 'lsp-mode)
+(require 'lsp-go)
+(require 'lsp-cpp)
+(require 'lsp-pyls)
+(add-hook 'prog-mode-hook #'lsp)
 
 
 (provide 'my_packages)

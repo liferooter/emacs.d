@@ -1,0 +1,156 @@
+
+# Пожалуйста, введите сообщение коммита для ваших изменений. Строки,
+# начинающиеся с «#» будут проигнорированы, а пустое сообщение
+# отменяет процесс коммита.
+#
+# На ветке master
+# Ваша ветка обновлена в соответствии с «origin/master».
+#
+# Изменения, которые будут включены в коммит:
+#	удалено:       .gitignore
+#	изменено:      elpa/archives/gnu/archive-contents
+#	изменено:      elpa/archives/gnu/archive-contents.signed
+#	изменено:      elpa/archives/melpa/archive-contents
+#	удалено:       elpa/concurrent-20161229.330/concurrent-autoloads.el
+#	удалено:       elpa/concurrent-20161229.330/concurrent-pkg.el
+#	удалено:       elpa/concurrent-20161229.330/concurrent.el
+#	удалено:       elpa/concurrent-20161229.330/concurrent.elc
+#	удалено:       elpa/ctable-20171006.11/ctable-autoloads.el
+#	удалено:       elpa/ctable-20171006.11/ctable-pkg.el
+#	удалено:       elpa/ctable-20171006.11/ctable.el
+#	удалено:       elpa/ctable-20171006.11/ctable.elc
+#	удалено:       elpa/dash-20200426.2244/dash-autoloads.el
+#	удалено:       elpa/dash-20200426.2244/dash-pkg.el
+#	удалено:       elpa/dash-20200426.2244/dash.el
+#	удалено:       elpa/dash-20200426.2244/dash.elc
+#	удалено:       elpa/dash-20200426.2244/dash.info
+#	удалено:       elpa/dash-20200426.2244/dir
+#	удалено:       elpa/deferred-20170901.1330/deferred-autoloads.el
+#	удалено:       elpa/deferred-20170901.1330/deferred-pkg.el
+#	удалено:       elpa/deferred-20170901.1330/deferred.el
+#	удалено:       elpa/deferred-20170901.1330/deferred.elc
+#	удалено:       elpa/doom-themes-20200522.2304/doom-Iosvkem-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-acario-dark-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-acario-light-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-challenger-deep-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-city-lights-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-dark+-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-dracula-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-ephemeral-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-fairy-floss-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-gruvbox-light-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-gruvbox-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-henna-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-horizon-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-laserwave-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-manegarm-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-manegarm-theme.elc
+#	удалено:       elpa/doom-themes-20200522.2304/doom-material-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-molokai-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-monokai-classic-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-monokai-pro-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-monokai-spectrum-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-moonlight-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-nord-light-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-nord-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-nova-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-oceanic-next-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-one-light-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-one-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-opera-light-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-opera-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-outrun-electric-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-palenight-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-peacock-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-rouge-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-snazzy-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-solarized-dark-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-solarized-light-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-sourcerer-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-spacegrey-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-themes-autoloads.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-themes-base.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-themes-base.elc
+#	удалено:       elpa/doom-themes-20200522.2304/doom-themes-ext-neotree.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-themes-ext-neotree.elc
+#	удалено:       elpa/doom-themes-20200522.2304/doom-themes-ext-org.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-themes-ext-org.elc
+#	удалено:       elpa/doom-themes-20200522.2304/doom-themes-ext-treemacs.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-themes-ext-visual-bell.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-themes-ext-visual-bell.elc
+#	удалено:       elpa/doom-themes-20200522.2304/doom-themes-pkg.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-themes.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-themes.elc
+#	удалено:       elpa/doom-themes-20200522.2304/doom-tomorrow-day-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-tomorrow-night-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-vibrant-theme.el
+#	удалено:       elpa/doom-themes-20200522.2304/doom-wilmersdorf-theme.el
+#	удалено:       elpa/epc-20140610.534/epc-autoloads.el
+#	удалено:       elpa/epc-20140610.534/epc-pkg.el
+#	удалено:       elpa/epc-20140610.534/epc.el
+#	удалено:       elpa/epc-20140610.534/epc.elc
+#	удалено:       elpa/epc-20140610.534/epcs.el
+#	удалено:       elpa/epc-20140610.534/epcs.elc
+#	удалено:       elpa/jedi-core-20191011.1750/Makefile
+#	удалено:       elpa/jedi-core-20191011.1750/jedi-core-autoloads.el
+#	удалено:       elpa/jedi-core-20191011.1750/jedi-core-pkg.el
+#	удалено:       elpa/jedi-core-20191011.1750/jedi-core.el
+#	удалено:       elpa/jedi-core-20191011.1750/jedi-core.elc
+#	удалено:       elpa/jedi-core-20191011.1750/jediepcserver.py
+#	удалено:       elpa/jedi-core-20191011.1750/setup.py
+#	удалено:       elpa/python-environment-20150310.853/python-environment-autoloads.el
+#	удалено:       elpa/python-environment-20150310.853/python-environment-pkg.el
+#	удалено:       elpa/python-environment-20150310.853/python-environment.el
+#	удалено:       elpa/python-environment-20150310.853/python-environment.elc
+#	удалено:       elpa/python-environment-20150310.853/test-python-environment.el
+#	удалено:       elpa/python-environment-20150310.853/test-python-environment.elc
+#	изменено:      projectile-bookmarks.eld
+#	изменено:      recentf
+#
+# Неотслеживаемые файлы:
+#	auto-saves/#!usr!src!linux!.config#
+#	auto-saves/.saves-10360-FlyBook~
+#	backups/
+#	elpa/ace-window-20200311.1025/
+#	elpa/all-the-icons-20200527.1304/
+#	elpa/async-20200113.1745/
+#	elpa/avy-20200522.510/
+#	elpa/bui-20200426.2219/
+#	elpa/company-20200525.101/
+#	elpa/company-lsp-20190612.1553/
+#	elpa/counsel-20200525.1632/
+#	elpa/counsel-projectile-20200522.1131/
+#	elpa/dap-mode-20200529.126/
+#	elpa/dash-20200524.1947/
+#	elpa/dash-functional-20200524.1947/
+#	elpa/doom-themes-20200528.2209/
+#	elpa/fish-mode-20200213.2137/
+#	elpa/flycheck-20200527.1502/
+#	elpa/git-commit-20200516.2016/
+#	elpa/ht-20200217.2331/
+#	elpa/ivy-20200527.2021/
+#	elpa/lsp-ivy-20200517.1910/
+#	elpa/lsp-java-20200528.1553/
+#	elpa/lsp-latex-20200425.920/
+#	elpa/lsp-mode-20200529.1227/
+#	elpa/lsp-python-ms-20200520.1609/
+#	elpa/lsp-treemacs-20200529.124/
+#	elpa/lsp-ui-20200503.1650/
+#	elpa/magit-20200528.1322/
+#	elpa/markdown-mode-20200529.35/
+#	elpa/markdown-preview-mode-20181213.1339/
+#	elpa/pfuture-20200425.1357/
+#	elpa/request-20200517.1305/
+#	elpa/spinner-1.7.3.signed
+#	elpa/spinner-1.7.3/
+#	elpa/swiper-20200503.1102/
+#	elpa/transient-20200524.1027/
+#	elpa/treemacs-20200524.2034/
+#	elpa/treemacs-projectile-20200114.1715/
+#	elpa/web-server-20200330.1407/
+#	elpa/websocket-20200419.2124/
+#	elpa/with-editor-20200522.1112/
+#	elpa/yasnippet-20200524.2215/
+#	elpa/yasnippet-snippets-20200526.907/
+#	transient/
+#

@@ -1,0 +1,35 @@
+# These settings were set by the catalyst build script that automatically
+# built this stage.
+# Please consult /usr/share/portage/config/make.conf.example for a more
+# detailed example.
+COMMON_FLAGS="-march=native -O2 -pipe"
+CFLAGS="${COMMON_FLAGS}"
+CXXFLAGS="${COMMON_FLAGS}"
+FCFLAGS="${COMMON_FLAGS}"
+FFLAGS="${COMMON_FLAGS}"
+
+MAKEOPTS="-j9"
+
+FEATURES="ccache"
+CCACHE_DIR="/var/cache/ccache"
+
+# NOTE: This stage was built with the bindist Use flag enabled
+PORTDIR="/var/db/repos/gentoo"
+DISTDIR="/var/cache/distfiles"
+PKGDIR="/var/cache/binpkgs"
+
+# This sets the language of build output to English.
+# Please keep this setting intact when reporting bugs.
+LC_MESSAGES=C
+
+USE="X alsa acpi bluetooth calendar djvu emacs ffmpeg gif gtk gui imagemagic java jpeg lm-sensors magic mp3 mp4 mpeg networkmanager opengl png pdf pulseaudio scanner cups sound usb upower udisks unicode videos xinerama touchpad fat"
+ACCEPT_LICENSE="*- @FREE"
+ACCEPT_KEYWORDS="amd64"
+
+L10N="ru"
+
+GENTOO_MIRRORS="https://mirror.yandex.ru/gentoo-distfiles/ http://mirror.yandex.ru/gentoo-distfiles/ ftp://mirror.yandex.ru/gentoo-distfiles/"
+GRUB_PLATFORMS="efi-64"
+VIDEO_CARDS="intel i965"
+PYTHON_TARGETS="python3_7 python2_7 python3_6"
+INPUT_DEVICES="libinput wacom"

@@ -1,0 +1,3 @@
+login=/usr/bin/sudo -u liferooter custom_login
+font-family=Jetbrains Mono
+font-size=13

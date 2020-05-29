@@ -1,0 +1,29 @@
+media-gfx/imagemagic corefonts raw webp
+>=app-editors/emacs-27.0.91 imagemagic gconf gfile gsettings json xft xpm tiff svg ssl sound xwidgets harfbuzz imagemagic toolkit-scroll-bars
+sys-apps/firejail x11
+virtual/linux-sources firmware
+app-emulation/qemu spice usbredir
+app-emulation/libvirt virt-network
+www-client/elinks bittorrent javascript ftp
+www-client/chromium widevine -proprietary-codecs
+dev-lang/lua -emacs
+
+sys-apps/util-linux static-libs
+# required by net-im/telegram-desktop-2.1.0::gentoo
+# required by net-im/telegram-desktop (argument)
+>=media-video/ffmpeg-4.2.2 opus
+# required by app-shells/fish-3.0.2::gentoo
+# required by fish (argument)
+>=dev-libs/libpcre2-10.34 pcre32
+# required by app-misc/neofetch-6.0.0::gentoo[X]
+# required by neofetch (argument)
+>=www-client/w3m-0.5.3_p20180125 imlib
+# required by app-emulation/libvirt-6.2.0-r2::gentoo[virt-network]
+# required by libvirt (argument)
+>=net-dns/dnsmasq-2.81 script
+# required by app-emulation/virt-manager-2.2.1-r3::gentoo[gtk]
+# required by virt-manager (argument)
+>=net-misc/spice-gtk-0.37-r2 usbredir
+# required by app-portage/pfl-3.1::gentoo[network-cron]
+# required by app-portage/pfl (argument)
+>=sys-apps/util-linux-2.35.1-r2 caps

@@ -1,0 +1,77 @@
+kde-plasma/kdeplasma-addons share
+kde-plasma/plasma-meta pam
+kde-apps/kdepim-meta clamav spamassassin
+kde-apps/kdemultimedia-meta -cdrom
+kde-apps/kdepim-addons importwizard markdown
+kde-apps/akonadi tools
+kde-apps/kio-extras mtp nfs samba openexr
+mail-filter/spamassassin cron
+net-voip/telepathy-gabble plugins
+kde-apps/kdeutils-meta 7zip gpg lrz rar
+media-sound/elisa mpris vlc
+media-gfx/imagemagic corefonts raw webp
+kde-apps/okular epub
+net-misc/nextcloud-client dolphin
+>=app-editors/emacs-27.0.91 imagemagic gconf gfile gsettings json xft xpm tiff svg ssl sound xwidgets harfbuzz imagemagic toolkit-scroll-bars
+sys-apps/firejail x11
+virtual/linux-sources firmware
+app-emulation/qemu spice usbredir
+app-emulation/libvirt virt-network
+
+sys-apps/util-linux static-libs
+# required by net-wireless/bluez-5.54::gentoo[systemd]
+# required by dev-lang/python-3.8.2-r2::gentoo[bluetooth]
+# required by x11-libs/libxcb-1.14::gentoo
+# required by kde-frameworks/kguiaddons-5.67.0::gentoo
+# required by kde-frameworks/kconfigwidgets-5.67.0::gentoo
+# required by kde-frameworks/kiconthemes-5.67.0::gentoo
+# required by kde-plasma/polkit-kde-agent-5.17.5::gentoo
+# required by kde-frameworks/kauth-5.67.0::gentoo
+>=sys-apps/dbus-1.12.16 user-session
+# required by media-sound/elisa-19.12.3::gentoo[-vlc]
+# required by kde-apps/kdemultimedia-meta-19.12.3::gentoo
+# required by kde-apps/kdemultimedia-meta (argument)
+>=dev-qt/qtmultimedia-5.14.1-r1 gstreamer
+# required by gnustep-base/gnustep-make-2.6.8::gentoo
+# required by gnustep-base/gnustep-base-1.24.9-r1::gentoo
+# required by app-arch/unar-1.10.7::gentoo
+# required by kde-apps/kdeutils-meta-19.12.3::gentoo[rar]
+# required by kde-apps/kdeutils-meta (argument)
+>=sys-devel/gcc-9.3.0 objc
+# required by app-arch/unar-1.10.7::gentoo
+# required by kde-apps/kdeutils-meta-19.12.3::gentoo[rar]
+# required by kde-apps/kdeutils-meta (argument)
+>=gnustep-base/gnustep-make-2.6.8 native-exceptions
+# required by net-im/telegram-desktop-2.1.0::gentoo
+# required by net-im/telegram-desktop (argument)
+>=media-video/ffmpeg-4.2.2 opus
+# required by app-shells/fish-3.0.2::gentoo
+# required by fish (argument)
+>=dev-libs/libpcre2-10.34 pcre32
+# required by app-misc/neofetch-6.0.0::gentoo[X]
+# required by neofetch (argument)
+>=www-client/w3m-0.5.3_p20180125 imlib
+# required by geary (user)
+dev-libs/folks eds
+# required by gnome-base/gnome-keyring-3.34.0::gentoo
+# required by app-crypt/libsecret-0.20.2::gentoo
+# required by gnome-extra/evolution-data-server-3.34.4::gentoo
+# required by dev-libs/folks-0.13.1::gentoo[eds]
+# required by mail-client/geary-3.36.2::gentoo
+# required by mail-client/geary (argument)
+>=app-crypt/pinentry-1.1.0-r2 gnome-keyring
+# required by dev-libs/folks-0.13.1::gentoo[eds]
+# required by mail-client/geary-3.36.2::gentoo
+# required by mail-client/geary (argument)
+>=gnome-extra/evolution-data-server-3.34.4 vala
+# required by gnome-extra/evolution-data-server-3.34.4::gentoo[vala]
+# required by dev-libs/folks-0.13.1::gentoo[eds]
+# required by mail-client/geary-3.36.2::gentoo
+# required by mail-client/geary (argument)
+>=dev-libs/libical-3.0.8 vala
+# required by app-emulation/libvirt-6.2.0-r2::gentoo[virt-network]
+# required by libvirt (argument)
+>=net-dns/dnsmasq-2.81 script
+# required by app-emulation/virt-manager-2.2.1-r3::gentoo[gtk]
+# required by virt-manager (argument)
+>=net-misc/spice-gtk-0.37-r2 usbredir

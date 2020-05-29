@@ -1,0 +1,4 @@
+# required by sys-kernel/genkernel-4.0.7-r1::gentoo[firmware]
+# required by sys-kernel/genkernel (argument)
+=sys-kernel/linux-firmware-20200421 linux-fw-redistributable no-source-code
+:q

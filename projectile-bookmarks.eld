@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/Emacs Projects/gotanks/")
+("~/.emacs.d/" "/home/liferooter/.emacs.d/" "/var/db/repos/liferooter/" "/var/db/" "/usr/src/linux-5.4.38-gentoo/")

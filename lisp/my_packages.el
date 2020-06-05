@@ -53,17 +53,18 @@
 (global-set-key (kbd "C-x t") 'treemacs)
 (define-key treemacs-mode-map (kbd "C-x C-f") 'treemacs-find-file)
 
-;; DAP Mode
-(require 'dap-python)
-(require 'dap-gdb-lldb)
-(require 'dap-go)
-
-;; LSP Mode
+;; Lsp Mode
 (require 'lsp-mode)
-(require 'lsp-go)
-(require 'lsp-cpp)
 (require 'lsp-pyls)
-(add-hook 'prog-mode-hook #'lsp)
+(require 'lsp-go)
+(require 'dap-mode)
+
+(setq lsp-keymap-prefix "C-c l")
+(setq gc-cons-threshold 100000000)
+(setq read-process-output-max (* 1024 1024)) ;; 1mb
+
+(add-hook 'python-mode-hook #'lsp)
+(add-hook 'go-mode #'lsp)
 
 
 (provide 'my_packages)

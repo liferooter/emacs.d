@@ -6,6 +6,7 @@
 ;;          Magnar Sveen <magnars@gmail.com>
 ;; Version: 1.2.0
 ;; Package-Version: 20200524.1947
+;; Package-Commit: ea4a4cc7cce7c3b93862a22df8bca8b83052ccbf
 ;; Package-Requires: ((dash "2.0.0") (emacs "24"))
 ;; Keywords: lisp functions combinators
 

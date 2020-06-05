@@ -26,6 +26,7 @@
 (add-hook 'org-mode-hook 'auto-fill-mode)
 
 (require 'my_packages)
+(require 'my_features)
 
 (provide 'my_init)
 ;;; my_init.el ends here

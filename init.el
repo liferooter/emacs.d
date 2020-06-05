@@ -18,10 +18,13 @@
    [default default default italic underline success warning error])
  '(ansi-color-names-vector
    ["#1c1e1f" "#e74c3c" "#b6e63e" "#e2c770" "#268bd2" "#fb2874" "#66d9ef" "#d6d6d4"])
+ '(comment-multi-line t)
+ '(comment-style 'multi-line)
  '(company-backends
    '(company-bbdb company-eclim company-semantic company-clang company-xcode company-cmake company-capf company-files
                   (company-dabbrev-code company-gtags company-etags company-keywords)
-                  company-oddmuse company-dabbrev company-jedi company-lsp))
+                  company-oddmuse company-dabbrev))
+ '(company-global-modes t)
  '(company-go-gocode-command "~/go/bin/gocode")
  '(company-go-show-annotation t)
  '(company-idle-delay 0)
@@ -34,7 +37,7 @@
  '(cursor-type 'bar)
  '(custom-enabled-themes '(doom-Iosvkem))
  '(custom-safe-themes
-   '("82360e5f96244ce8cc6e765eeebe7788c2c5f3aeb96c1a765629c5c7937c0b5b" "7d708f0168f54b90fc91692811263c995bebb9f68b8b7525d0e2200da9bc903c" "c83c095dd01cde64b631fb0fe5980587deec3834dc55144a6e78ff91ebc80b19" "99ea831ca79a916f1bd789de366b639d09811501e8c092c85b2cb7d697777f93" "9b01a258b57067426cc3c8155330b0381ae0d8dd41d5345b5eddac69f40d409b" "1623aa627fecd5877246f48199b8e2856647c99c6acdab506173f9bb8b0a41ac" "79278310dd6cacf2d2f491063c4ab8b129fee2a498e4c25912ddaa6c3c5b621e" "e1ef2d5b8091f4953fe17b4ca3dd143d476c106e221d92ded38614266cea3c8b" "6c3b5f4391572c4176908bb30eddc1718344b8eaff50e162e36f271f6de015ca" "7b3d184d2955990e4df1162aeff6bfb4e1c3e822368f0359e15e2974235d9fa8" "54cf3f8314ce89c4d7e20ae52f7ff0739efb458f4326a2ca075bf34bc0b4f499" "730a87ed3dc2bf318f3ea3626ce21fb054cd3a1471dcd59c81a4071df02cb601" "2cdc13ef8c76a22daa0f46370011f54e79bae00d5736340a5ddfe656a767fddf" "b5fff23b86b3fd2dd2cc86aa3b27ee91513adaefeaa75adc8af35a45ffb6c499" "3c2f28c6ba2ad7373ea4c43f28fcf2eed14818ec9f0659b1c97d4e89c99e091e" "7f791f743870983b9bb90c8285e1e0ba1bf1ea6e9c9a02c60335899ba20f3c94" "9f15d03580b08dae41a1e5c1f00d1f1aa99fea121ca32c28e2abec9563c6e32c" "6177ecbffb8f37756012c9ee9fd73fc043520836d254397566e37c6204118852" "56911bd75304fdb19619c9cb4c7b0511214d93f18e566e5b954416756a20cc80" "379a804655efccc13a3d446468992bfdfc30ff27d19cfda6f62c7f9c9e7a8a7d" "aa5dee47c85f12d166745ae56c778eb7833df3f6799c2b2d607d5b8da8f5f579" "a92e9da0fab90cbec4af4a2035602208cebf3d071ea547157b2bfc5d9bd4d48d" "3d3807f1070bb91a68d6638a708ee09e63c0825ad21809c87138e676a60bda5d" "1526aeed166165811eefd9a6f9176061ec3d121ba39500af2048073bea80911e" "3577ee091e1d318c49889574a31175970472f6f182a9789f1a3e9e4513641d86" "fe94e2e42ccaa9714dd0f83a5aa1efeef819e22c5774115a9984293af609fce7" "bc836bf29eab22d7e5b4c142d201bcce351806b7c1f94955ccafab8ce5b20208" "d71aabbbd692b54b6263bfe016607f93553ea214bc1435d17de98894a5c3a086" "76bfa9318742342233d8b0b42e824130b3a50dcc732866ff8e47366aed69de11" "dde8c620311ea241c0b490af8e6f570fdd3b941d7bc209e55cd87884eb733b0e" "f2b56244ecc6f4b952b2bcb1d7e517f1f4272876a8c873b378f5cf68e904bd59" "3c7eef027f94956ea194aafa537c78098ab4cd907a2bb11b0e6c5f42e8a95750" "d74c5485d42ca4b7f3092e50db687600d0e16006d8fa335c69cf4f379dbd0eee" "be9645aaa8c11f76a10bcf36aaf83f54f4587ced1b9b679b55639c87404e2499" "9efb2d10bfb38fe7cd4586afb3e644d082cbcdb7435f3d1e8dd9413cbe5e61fc" "2f1518e906a8b60fac943d02ad415f1d8b3933a5a7f75e307e6e9a26ef5bf570" "6b2636879127bf6124ce541b1b2824800afc49c6ccd65439d6eb987dbf200c36" default))
+   '("c74e83f8aa4c78a121b52146eadb792c9facc5b1f02c917e3dbb454fca931223" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "82360e5f96244ce8cc6e765eeebe7788c2c5f3aeb96c1a765629c5c7937c0b5b" "7d708f0168f54b90fc91692811263c995bebb9f68b8b7525d0e2200da9bc903c" "c83c095dd01cde64b631fb0fe5980587deec3834dc55144a6e78ff91ebc80b19" "99ea831ca79a916f1bd789de366b639d09811501e8c092c85b2cb7d697777f93" "9b01a258b57067426cc3c8155330b0381ae0d8dd41d5345b5eddac69f40d409b" "1623aa627fecd5877246f48199b8e2856647c99c6acdab506173f9bb8b0a41ac" "79278310dd6cacf2d2f491063c4ab8b129fee2a498e4c25912ddaa6c3c5b621e" "e1ef2d5b8091f4953fe17b4ca3dd143d476c106e221d92ded38614266cea3c8b" "6c3b5f4391572c4176908bb30eddc1718344b8eaff50e162e36f271f6de015ca" "7b3d184d2955990e4df1162aeff6bfb4e1c3e822368f0359e15e2974235d9fa8" "54cf3f8314ce89c4d7e20ae52f7ff0739efb458f4326a2ca075bf34bc0b4f499" "730a87ed3dc2bf318f3ea3626ce21fb054cd3a1471dcd59c81a4071df02cb601" "2cdc13ef8c76a22daa0f46370011f54e79bae00d5736340a5ddfe656a767fddf" "b5fff23b86b3fd2dd2cc86aa3b27ee91513adaefeaa75adc8af35a45ffb6c499" "3c2f28c6ba2ad7373ea4c43f28fcf2eed14818ec9f0659b1c97d4e89c99e091e" "7f791f743870983b9bb90c8285e1e0ba1bf1ea6e9c9a02c60335899ba20f3c94" "9f15d03580b08dae41a1e5c1f00d1f1aa99fea121ca32c28e2abec9563c6e32c" "6177ecbffb8f37756012c9ee9fd73fc043520836d254397566e37c6204118852" "56911bd75304fdb19619c9cb4c7b0511214d93f18e566e5b954416756a20cc80" "379a804655efccc13a3d446468992bfdfc30ff27d19cfda6f62c7f9c9e7a8a7d" "aa5dee47c85f12d166745ae56c778eb7833df3f6799c2b2d607d5b8da8f5f579" "a92e9da0fab90cbec4af4a2035602208cebf3d071ea547157b2bfc5d9bd4d48d" "3d3807f1070bb91a68d6638a708ee09e63c0825ad21809c87138e676a60bda5d" "1526aeed166165811eefd9a6f9176061ec3d121ba39500af2048073bea80911e" "3577ee091e1d318c49889574a31175970472f6f182a9789f1a3e9e4513641d86" "fe94e2e42ccaa9714dd0f83a5aa1efeef819e22c5774115a9984293af609fce7" "bc836bf29eab22d7e5b4c142d201bcce351806b7c1f94955ccafab8ce5b20208" "d71aabbbd692b54b6263bfe016607f93553ea214bc1435d17de98894a5c3a086" "76bfa9318742342233d8b0b42e824130b3a50dcc732866ff8e47366aed69de11" "dde8c620311ea241c0b490af8e6f570fdd3b941d7bc209e55cd87884eb733b0e" "f2b56244ecc6f4b952b2bcb1d7e517f1f4272876a8c873b378f5cf68e904bd59" "3c7eef027f94956ea194aafa537c78098ab4cd907a2bb11b0e6c5f42e8a95750" "d74c5485d42ca4b7f3092e50db687600d0e16006d8fa335c69cf4f379dbd0eee" "be9645aaa8c11f76a10bcf36aaf83f54f4587ced1b9b679b55639c87404e2499" "9efb2d10bfb38fe7cd4586afb3e644d082cbcdb7435f3d1e8dd9413cbe5e61fc" "2f1518e906a8b60fac943d02ad415f1d8b3933a5a7f75e307e6e9a26ef5bf570" "6b2636879127bf6124ce541b1b2824800afc49c6ccd65439d6eb987dbf200c36" default))
  '(dap-auto-configure-mode t)
  '(dashboard-center-content t)
  '(dashboard-footer-messages
@@ -58,6 +61,8 @@
  '(dashboard-set-heading-icons t)
  '(dashboard-set-navigator t)
  '(dashboard-startup-banner 'logo)
+ '(default-input-method nil)
+ '(display-line-numbers-type 'relative)
  '(doom-modeline-github t)
  '(doom-modeline-indent-info t)
  '(doom-modeline-mode t)
@@ -71,9 +76,11 @@
  '(flycheck-go-unconvert-executable "~/go/bin/unconvert")
  '(flycheck-go-vet-executable nil)
  '(global-anzu-mode t)
+ '(global-company-mode nil)
  '(global-diff-hl-mode t)
  '(global-ede-mode t)
  '(global-flycheck-mode t)
+ '(global-hl-todo-mode t)
  '(helm-mode t)
  '(indent-tabs-mode nil)
  '(inhibit-startup-screen t)
@@ -86,6 +93,7 @@
  '(lsp-keymap-prefix "C-c C-l")
  '(lsp-lens-auto-enable t)
  '(lsp-treemacs-sync-mode t)
+ '(mood-line-mode t)
  '(neo-autorefresh t)
  '(neo-create-file-auto-open t)
  '(neo-hide-cursor t)
@@ -93,12 +101,25 @@
  '(neo-toggle-window-keep-p t)
  '(nlinum-highlight-current-line t)
  '(objed-cursor-color "#e74c3c")
+ '(org-mode-hook
+   '(#[0 "\300\301\302\303\304$\207"
+         [add-hook change-major-mode-hook org-show-all append local]
+         5]
+     #[0 "\300\301\302\303\304$\207"
+         [add-hook change-major-mode-hook org-babel-show-result-all append local]
+         5]
+     org-babel-result-hide-spec org-babel-hide-all-hashes
+     #[0 "\301\211\207"
+         [imenu-create-index-function org-imenu-get-tree]
+         2]
+     visual-line-mode real-auto-save-mode))
  '(org-pretty-entities t)
  '(package-selected-packages
-   '(treemacs-projectile fish-mode company-lsp counsel-projectile lsp-ivy ivy lsp-latex lsp-python-ms lsp-java dap-mode treemacs lsp-ui yasnippet-snippets magit markdown-preview-mode markdown-mode hydra doom-themes go-guru highlight-parentheses company go-mode diff-hl projectile nlinum solarized-theme solaire-mode flycheck dashboard doom-modeline))
+   '(mood-line company-lsp lsp-ivy lsp-java dap-mode lsp-treemacs lsp-ui pip-requirements lua-mode hl-todo elpy slime-company sudo-edit real-auto-save treemacs-projectile fish-mode counsel-projectile ivy treemacs yasnippet-snippets magit markdown-preview-mode markdown-mode hydra doom-themes go-guru company go-mode diff-hl projectile nlinum solarized-theme solaire-mode flycheck dashboard))
  '(pdf-view-midnight-colors (cons "#d6d6d4" "#1c1e1f"))
+ '(pretty-symbol-categories '(lambda relational logical nil))
  '(prog-mode-hook
-   '(company-mode flycheck-mode nlinum-mode flycheck-mode hl-line-mode))
+   '(flycheck-mode nlinum-mode hl-line-mode real-auto-save-mode company-mode yas-minor-mode))
  '(projectile-after-switch-project-hook nil)
  '(projectile-completion-system 'ivy)
  '(projectile-enable-caching t)
@@ -106,6 +127,10 @@
  '(rustic-ansi-faces
    ["#1c1e1f" "#e74c3c" "#b6e63e" "#e2c770" "#268bd2" "#fb2874" "#66d9ef" "#d6d6d4"])
  '(scroll-bar-mode 'right)
+ '(server-after-make-frame-hook nil)
+ '(show-paren-mode t)
+ '(show-trailing-whitespace t)
+ '(sml/theme 'respectful)
  '(solaire-global-mode t)
  '(treemacs-follow-after-init nil)
  '(treemacs-follow-mode t)
@@ -133,13 +158,15 @@
     (cons 320 "#77504e")
     (cons 340 "#555556")
     (cons 360 "#555556")))
- '(vc-annotate-very-old-color nil))
+ '(vc-annotate-very-old-color nil)
+ '(xterm-mouse-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "JetBrains Mono" :foundry "JB  " :slant normal :weight normal :height 128 :width normal)))))
+ '(default ((t (:family "JetBrains Mono" :foundry "JB  " :slant normal :weight normal :height 128 :width normal))))
+ '(ivy-current-match ((t (:underline t)))))
 
 (provide 'init)
 ;;; init.el ends here

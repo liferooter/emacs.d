@@ -55,6 +55,7 @@
 
 ;; Lsp Mode
 (require 'lsp-mode)
+(require 'lsp-ui)
 (require 'lsp-pyls)
 (require 'lsp-go)
 (require 'dap-mode)
@@ -62,6 +63,8 @@
 (setq lsp-keymap-prefix "C-c l")
 (setq gc-cons-threshold 100000000)
 (setq read-process-output-max (* 1024 1024)) ;; 1mb
+
+(add-hook 'prog-mode-hook 'lsp-ui-mode)
 
 (add-hook 'python-mode-hook #'lsp)
 (add-hook 'go-mode #'lsp)

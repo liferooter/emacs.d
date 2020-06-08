@@ -1,0 +1,4 @@
+#!/bin/bash
+
+set -x
+env GTK_THEME="`dconf read /org/gnome/desktop/interface/gtk-theme | tr -d \"\'\"`:dark" emacsclient -ca "" $*

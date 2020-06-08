@@ -1,0 +1,11 @@
+import json
+
+
+class Message:
+    def __init__(self, json_string):
+        self.__json = json_string
+        self.dict = json.loads(json_string)
+
+    @property
+    def dict(self):
+        return json.loads(self.__json)

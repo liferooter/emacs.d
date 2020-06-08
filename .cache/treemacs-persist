@@ -1,0 +1,7 @@
+* Default
+** gotanks
+ - path :: ~/Emacs Projects/gotanks
+** .emacs.d
+ - path :: ~/.emacs.d
+** exosceleton
+ - path :: ~/Emacs Projects/exosceleton

@@ -1,0 +1,17 @@
+# Core Exosceleton controller
+
+# Messenger --message-->  backend --[messages list]--> controller --
+#                          ^
+# Messenger --message------'
+
+import json
+import queue
+
+class Controller:
+    def __init__(self):
+        self.self = self
+
+
+class Module:
+    def __init__(self):
+        pass

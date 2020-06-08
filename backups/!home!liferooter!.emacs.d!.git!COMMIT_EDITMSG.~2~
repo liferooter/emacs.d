@@ -1,0 +1,660 @@
+
+# Пожалуйста, введите сообщение коммита для ваших изменений. Строки,
+# начинающиеся с «#» будут проигнорированы, а пустое сообщение
+# отменяет процесс коммита.
+#
+# На ветке master
+# Ваша ветка обновлена в соответствии с «origin/master».
+#
+# Изменения, которые будут включены в коммит:
+#	изменено:      elpa/archives/gnu/archive-contents
+#	изменено:      elpa/archives/gnu/archive-contents.signed
+#	изменено:      elpa/archives/melpa/archive-contents
+#	изменено:      elpa/bui-20200426.2219/bui-core.elc
+#	изменено:      elpa/bui-20200426.2219/bui-pkg.el
+#	изменено:      elpa/bui-20200426.2219/bui-utils.elc
+#	изменено:      elpa/company-lsp-20190612.1553/company-lsp-pkg.el
+#	изменено:      elpa/company-lsp-20190612.1553/company-lsp.el
+#	изменено:      elpa/company-lsp-20190612.1553/company-lsp.elc
+#	изменено:      elpa/dap-mode-20200529.126/dap-mode-pkg.el
+#	изменено:      elpa/dap-mode-20200529.126/dap-mode.elc
+#	изменено:      elpa/dap-mode-20200529.126/dap-mouse.elc
+#	изменено:      elpa/dap-mode-20200529.126/dap-python.elc
+#	изменено:      elpa/dap-mode-20200529.126/dap-ui-repl.elc
+#	изменено:      elpa/dap-mode-20200529.126/dap-ui.elc
+#	изменено:      elpa/dap-mode-20200529.126/dapui.elc
+#	изменено:      elpa/dash-functional-20200524.1947/dash-functional-pkg.el
+#	изменено:      elpa/dash-functional-20200524.1947/dash-functional.el
+#	удалено:       elpa/doom-modeline-20200513.1103/doom-modeline-autoloads.el
+#	удалено:       elpa/doom-modeline-20200513.1103/doom-modeline-core.el
+#	удалено:       elpa/doom-modeline-20200513.1103/doom-modeline-core.elc
+#	удалено:       elpa/doom-modeline-20200513.1103/doom-modeline-env.el
+#	удалено:       elpa/doom-modeline-20200513.1103/doom-modeline-env.elc
+#	удалено:       elpa/doom-modeline-20200513.1103/doom-modeline-pkg.el
+#	удалено:       elpa/doom-modeline-20200513.1103/doom-modeline-segments.el
+#	удалено:       elpa/doom-modeline-20200513.1103/doom-modeline-segments.elc
+#	удалено:       elpa/doom-modeline-20200513.1103/doom-modeline.el
+#	удалено:       elpa/doom-modeline-20200513.1103/doom-modeline.elc
+#	удалено:       elpa/doom-themes-20200528.2209/doom-Iosvkem-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-acario-dark-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-acario-light-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-challenger-deep-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-city-lights-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-dark+-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-dracula-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-ephemeral-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-fairy-floss-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-gruvbox-light-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-gruvbox-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-henna-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-horizon-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-laserwave-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-manegarm-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-material-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-molokai-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-monokai-classic-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-monokai-pro-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-monokai-spectrum-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-moonlight-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-nord-light-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-nord-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-nova-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-oceanic-next-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-one-light-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-one-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-opera-light-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-opera-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-outrun-electric-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-palenight-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-peacock-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-rouge-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-snazzy-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-solarized-dark-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-solarized-light-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-sourcerer-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-spacegrey-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-themes-autoloads.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-themes-base.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-themes-base.elc
+#	удалено:       elpa/doom-themes-20200528.2209/doom-themes-ext-neotree.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-themes-ext-neotree.elc
+#	удалено:       elpa/doom-themes-20200528.2209/doom-themes-ext-org.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-themes-ext-org.elc
+#	удалено:       elpa/doom-themes-20200528.2209/doom-themes-ext-treemacs.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-themes-ext-visual-bell.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-themes-ext-visual-bell.elc
+#	удалено:       elpa/doom-themes-20200528.2209/doom-themes-pkg.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-themes.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-themes.elc
+#	удалено:       elpa/doom-themes-20200528.2209/doom-tomorrow-day-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-tomorrow-night-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-vibrant-theme.el
+#	удалено:       elpa/doom-themes-20200528.2209/doom-wilmersdorf-theme.el
+#	удалено:       elpa/highlight-parentheses-20180704.1102/highlight-parentheses-autoloads.el
+#	удалено:       elpa/highlight-parentheses-20180704.1102/highlight-parentheses-pkg.el
+#	удалено:       elpa/highlight-parentheses-20180704.1102/highlight-parentheses.el
+#	удалено:       elpa/highlight-parentheses-20180704.1102/highlight-parentheses.elc
+#	удалено:       elpa/ivy-20200527.2021/colir.el
+#	удалено:       elpa/ivy-20200527.2021/colir.elc
+#	удалено:       elpa/ivy-20200527.2021/dir
+#	удалено:       elpa/ivy-20200527.2021/elpa.el
+#	удалено:       elpa/ivy-20200527.2021/elpa.elc
+#	удалено:       elpa/ivy-20200527.2021/ivy-autoloads.el
+#	удалено:       elpa/ivy-20200527.2021/ivy-avy.el
+#	удалено:       elpa/ivy-20200527.2021/ivy-avy.elc
+#	удалено:       elpa/ivy-20200527.2021/ivy-faces.el
+#	удалено:       elpa/ivy-20200527.2021/ivy-faces.elc
+#	удалено:       elpa/ivy-20200527.2021/ivy-help.org
+#	удалено:       elpa/ivy-20200527.2021/ivy-overlay.el
+#	удалено:       elpa/ivy-20200527.2021/ivy-overlay.elc
+#	удалено:       elpa/ivy-20200527.2021/ivy-pkg.el
+#	удалено:       elpa/ivy-20200527.2021/ivy.el
+#	удалено:       elpa/ivy-20200527.2021/ivy.elc
+#	удалено:       elpa/ivy-20200527.2021/ivy.info
+#	изменено:      elpa/lsp-ivy-20200517.1910/lsp-ivy-pkg.el
+#	изменено:      elpa/lsp-ivy-20200517.1910/lsp-ivy.el
+#	изменено:      elpa/lsp-ivy-20200517.1910/lsp-ivy.elc
+#	изменено:      elpa/lsp-java-20200528.1553/lsp-java-boot.elc
+#	изменено:      elpa/lsp-java-20200528.1553/lsp-java.elc
+#	изменено:      elpa/lsp-java-20200528.1553/lsp-jt.elc
+#	удалено:       elpa/lsp-latex-20200425.920/lsp-latex-autoloads.el
+#	удалено:       elpa/lsp-latex-20200425.920/lsp-latex-pkg.el
+#	удалено:       elpa/lsp-latex-20200425.920/lsp-latex.el
+#	удалено:       elpa/lsp-latex-20200425.920/lsp-latex.elc
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-clients.el
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-clients.elc
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-clojure.el
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-clojure.elc
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-cpp.el
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-cpp.elc
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-csharp.el
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-csharp.elc
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-css.el
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-css.elc
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-elm.el
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-elm.elc
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-erlang.el
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-erlang.elc
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-eslint.el
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-eslint.elc
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-fsharp.el
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-fsharp.elc
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-gdscript.el
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-gdscript.elc
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-go.el
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-go.elc
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-haxe.el
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-haxe.elc
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-html.el
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-html.elc
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-intelephense.el
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-intelephense.elc
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-json.el
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-json.elc
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-metals.el
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-metals.elc
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-mode-autoloads.el
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-mode-pkg.el
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-mode.el
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-mode.elc
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-perl.el
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-perl.elc
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-pwsh.el
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-pwsh.elc
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-pyls.el
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-pyls.elc
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-rust.el
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-rust.elc
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-serenata.el
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-serenata.elc
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-solargraph.el
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-solargraph.elc
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-terraform.el
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-terraform.elc
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-verilog.el
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-verilog.elc
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-vetur.el
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-vetur.elc
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-vhdl.el
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-vhdl.elc
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-xml.el
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-xml.elc
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-yaml.el
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp-yaml.elc
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp.el
+#	удалено:       elpa/lsp-mode-20200529.1227/lsp.elc
+#	удалено:       elpa/lsp-python-ms-20200520.1609/lsp-python-ms-autoloads.el
+#	удалено:       elpa/lsp-python-ms-20200520.1609/lsp-python-ms-pkg.el
+#	удалено:       elpa/lsp-python-ms-20200520.1609/lsp-python-ms.el
+#	удалено:       elpa/lsp-python-ms-20200520.1609/lsp-python-ms.elc
+#	изменено:      elpa/lsp-treemacs-20200529.124/lsp-metals-treeview.elc
+#	изменено:      elpa/lsp-treemacs-20200529.124/lsp-treemacs.elc
+#	удалено:       elpa/lsp-ui-20200503.1650/lsp-ui-autoloads.el
+#	удалено:       elpa/lsp-ui-20200503.1650/lsp-ui-doc.el
+#	удалено:       elpa/lsp-ui-20200503.1650/lsp-ui-doc.elc
+#	удалено:       elpa/lsp-ui-20200503.1650/lsp-ui-doc.html
+#	удалено:       elpa/lsp-ui-20200503.1650/lsp-ui-flycheck.el
+#	удалено:       elpa/lsp-ui-20200503.1650/lsp-ui-flycheck.elc
+#	удалено:       elpa/lsp-ui-20200503.1650/lsp-ui-imenu.el
+#	удалено:       elpa/lsp-ui-20200503.1650/lsp-ui-imenu.elc
+#	удалено:       elpa/lsp-ui-20200503.1650/lsp-ui-peek.el
+#	удалено:       elpa/lsp-ui-20200503.1650/lsp-ui-peek.elc
+#	удалено:       elpa/lsp-ui-20200503.1650/lsp-ui-pkg.el
+#	удалено:       elpa/lsp-ui-20200503.1650/lsp-ui-sideline.el
+#	удалено:       elpa/lsp-ui-20200503.1650/lsp-ui-sideline.elc
+#	удалено:       elpa/lsp-ui-20200503.1650/lsp-ui.el
+#	удалено:       elpa/lsp-ui-20200503.1650/lsp-ui.elc
+#	удалено:       elpa/magit-20200528.1322/AUTHORS.md
+#	удалено:       elpa/magit-20200528.1322/LICENSE
+#	удалено:       elpa/magit-20200528.1322/dir
+#	удалено:       elpa/magit-20200528.1322/git-rebase.el
+#	удалено:       elpa/magit-20200528.1322/git-rebase.elc
+#	удалено:       elpa/magit-20200528.1322/magit-apply.el
+#	удалено:       elpa/magit-20200528.1322/magit-apply.elc
+#	удалено:       elpa/magit-20200528.1322/magit-autoloads.el
+#	удалено:       elpa/magit-20200528.1322/magit-autorevert.el
+#	удалено:       elpa/magit-20200528.1322/magit-autorevert.elc
+#	удалено:       elpa/magit-20200528.1322/magit-bisect.el
+#	удалено:       elpa/magit-20200528.1322/magit-bisect.elc
+#	удалено:       elpa/magit-20200528.1322/magit-blame.el
+#	удалено:       elpa/magit-20200528.1322/magit-blame.elc
+#	удалено:       elpa/magit-20200528.1322/magit-bookmark.el
+#	удалено:       elpa/magit-20200528.1322/magit-bookmark.elc
+#	удалено:       elpa/magit-20200528.1322/magit-branch.el
+#	удалено:       elpa/magit-20200528.1322/magit-branch.elc
+#	удалено:       elpa/magit-20200528.1322/magit-clone.el
+#	удалено:       elpa/magit-20200528.1322/magit-clone.elc
+#	удалено:       elpa/magit-20200528.1322/magit-commit.el
+#	удалено:       elpa/magit-20200528.1322/magit-commit.elc
+#	удалено:       elpa/magit-20200528.1322/magit-core.el
+#	удалено:       elpa/magit-20200528.1322/magit-core.elc
+#	удалено:       elpa/magit-20200528.1322/magit-diff.el
+#	удалено:       elpa/magit-20200528.1322/magit-diff.elc
+#	удалено:       elpa/magit-20200528.1322/magit-ediff.el
+#	удалено:       elpa/magit-20200528.1322/magit-ediff.elc
+#	удалено:       elpa/magit-20200528.1322/magit-extras.el
+#	удалено:       elpa/magit-20200528.1322/magit-extras.elc
+#	удалено:       elpa/magit-20200528.1322/magit-fetch.el
+#	удалено:       elpa/magit-20200528.1322/magit-fetch.elc
+#	удалено:       elpa/magit-20200528.1322/magit-files.el
+#	удалено:       elpa/magit-20200528.1322/magit-files.elc
+#	удалено:       elpa/magit-20200528.1322/magit-git.el
+#	удалено:       elpa/magit-20200528.1322/magit-git.elc
+#	удалено:       elpa/magit-20200528.1322/magit-gitignore.el
+#	удалено:       elpa/magit-20200528.1322/magit-gitignore.elc
+#	удалено:       elpa/magit-20200528.1322/magit-imenu.el
+#	удалено:       elpa/magit-20200528.1322/magit-imenu.elc
+#	удалено:       elpa/magit-20200528.1322/magit-log.el
+#	удалено:       elpa/magit-20200528.1322/magit-log.elc
+#	удалено:       elpa/magit-20200528.1322/magit-margin.el
+#	удалено:       elpa/magit-20200528.1322/magit-margin.elc
+#	удалено:       elpa/magit-20200528.1322/magit-merge.el
+#	удалено:       elpa/magit-20200528.1322/magit-merge.elc
+#	удалено:       elpa/magit-20200528.1322/magit-mode.el
+#	удалено:       elpa/magit-20200528.1322/magit-mode.elc
+#	удалено:       elpa/magit-20200528.1322/magit-notes.el
+#	удалено:       elpa/magit-20200528.1322/magit-notes.elc
+#	удалено:       elpa/magit-20200528.1322/magit-obsolete.el
+#	удалено:       elpa/magit-20200528.1322/magit-obsolete.elc
+#	удалено:       elpa/magit-20200528.1322/magit-patch.el
+#	удалено:       elpa/magit-20200528.1322/magit-patch.elc
+#	удалено:       elpa/magit-20200528.1322/magit-pkg.el
+#	удалено:       elpa/magit-20200528.1322/magit-process.el
+#	удалено:       elpa/magit-20200528.1322/magit-process.elc
+#	удалено:       elpa/magit-20200528.1322/magit-pull.el
+#	удалено:       elpa/magit-20200528.1322/magit-pull.elc
+#	удалено:       elpa/magit-20200528.1322/magit-push.el
+#	удалено:       elpa/magit-20200528.1322/magit-push.elc
+#	удалено:       elpa/magit-20200528.1322/magit-reflog.el
+#	удалено:       elpa/magit-20200528.1322/magit-reflog.elc
+#	удалено:       elpa/magit-20200528.1322/magit-refs.el
+#	удалено:       elpa/magit-20200528.1322/magit-refs.elc
+#	удалено:       elpa/magit-20200528.1322/magit-remote.el
+#	удалено:       elpa/magit-20200528.1322/magit-remote.elc
+#	удалено:       elpa/magit-20200528.1322/magit-repos.el
+#	удалено:       elpa/magit-20200528.1322/magit-repos.elc
+#	удалено:       elpa/magit-20200528.1322/magit-reset.el
+#	удалено:       elpa/magit-20200528.1322/magit-reset.elc
+#	удалено:       elpa/magit-20200528.1322/magit-section.el
+#	удалено:       elpa/magit-20200528.1322/magit-section.elc
+#	удалено:       elpa/magit-20200528.1322/magit-sequence.el
+#	удалено:       elpa/magit-20200528.1322/magit-sequence.elc
+#	удалено:       elpa/magit-20200528.1322/magit-stash.el
+#	удалено:       elpa/magit-20200528.1322/magit-stash.elc
+#	удалено:       elpa/magit-20200528.1322/magit-status.el
+#	удалено:       elpa/magit-20200528.1322/magit-status.elc
+#	удалено:       elpa/magit-20200528.1322/magit-submodule.el
+#	удалено:       elpa/magit-20200528.1322/magit-submodule.elc
+#	удалено:       elpa/magit-20200528.1322/magit-subtree.el
+#	удалено:       elpa/magit-20200528.1322/magit-subtree.elc
+#	удалено:       elpa/magit-20200528.1322/magit-tag.el
+#	удалено:       elpa/magit-20200528.1322/magit-tag.elc
+#	удалено:       elpa/magit-20200528.1322/magit-transient.el
+#	удалено:       elpa/magit-20200528.1322/magit-transient.elc
+#	удалено:       elpa/magit-20200528.1322/magit-utils.el
+#	удалено:       elpa/magit-20200528.1322/magit-utils.elc
+#	удалено:       elpa/magit-20200528.1322/magit-wip.el
+#	удалено:       elpa/magit-20200528.1322/magit-wip.elc
+#	удалено:       elpa/magit-20200528.1322/magit-worktree.el
+#	удалено:       elpa/magit-20200528.1322/magit-worktree.elc
+#	удалено:       elpa/magit-20200528.1322/magit.el
+#	удалено:       elpa/magit-20200528.1322/magit.elc
+#	удалено:       elpa/magit-20200528.1322/magit.info
+#	удалено:       elpa/magit-20200528.1322/magit.info-1
+#	удалено:       elpa/magit-20200528.1322/magit.info-2
+#	удалено:       elpa/markdown-mode-20200529.35/markdown-mode-autoloads.el
+#	удалено:       elpa/markdown-mode-20200529.35/markdown-mode-pkg.el
+#	удалено:       elpa/markdown-mode-20200529.35/markdown-mode.el
+#	удалено:       elpa/markdown-mode-20200529.35/markdown-mode.elc
+#	изменено:      elpa/request-20200517.1305/request-pkg.el
+#	изменено:      elpa/request-20200517.1305/request.el
+#	изменено:      elpa/request-20200517.1305/request.elc
+#	удалено:       elpa/solaire-mode-20200423.742/solaire-mode-autoloads.el
+#	удалено:       elpa/solaire-mode-20200423.742/solaire-mode-pkg.el
+#	удалено:       elpa/solaire-mode-20200423.742/solaire-mode.el
+#	удалено:       elpa/solaire-mode-20200423.742/solaire-mode.elc
+#	изменено:      elpa/spinner-1.7.3/spinner-pkg.el
+#	изменено:      elpa/spinner-1.7.3/spinner.elc
+#	удалено:       elpa/transient-20200524.1027/dir
+#	удалено:       elpa/transient-20200524.1027/transient-autoloads.el
+#	удалено:       elpa/transient-20200524.1027/transient-pkg.el
+#	удалено:       elpa/transient-20200524.1027/transient.el
+#	удалено:       elpa/transient-20200524.1027/transient.elc
+#	удалено:       elpa/transient-20200524.1027/transient.info
+#	удалено:       elpa/treemacs-20200524.2034/Changelog.org
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/asciidoc.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/audio.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/babel.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/bookmark.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/buffer-group-closed.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/buffer-group-open.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/c.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/cabal.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/clojure.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/conf.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/css.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/dart.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/direnv.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/docker.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/elx-light.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/elx.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/emacs.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/erlang.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/error.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/git.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/go.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/haskell.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/html.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/hy.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/image.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/info.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/jar.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/jinja2.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/js.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/json.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/julia.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/kotlin.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/ledger.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/lock.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/mail-mark-read.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/mail-mark-unread.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/mail.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/markdown.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/nix.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/ocaml.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/pdf.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/php.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/project.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/puppet.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/purescript.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/python.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/racket.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/rust.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/sbt.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/scala.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/scons.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/shell.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/svgrepo/README.txt
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/svgrepo/briefcase.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/svgrepo/cal.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/svgrepo/close.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/svgrepo/house.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/svgrepo/list.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/svgrepo/repeat.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/svgrepo/screen.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/svgrepo/suitcase.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/systemd.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/tags-closed.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/tags-leaf.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/tags-open.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/tex.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/ts.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/txt.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vagrant.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/video.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/README.txt
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/access.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/ai.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/alaw.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/angular.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/ansible.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/antlr.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/any.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/apache.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/apple.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/appveyor.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/arduino.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/ascript.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/asm.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/asp.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/autohk.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/babel.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/bat.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/bazel.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/binary.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/bower.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/bundler.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/cargo.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/cert.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/cfscript.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/class.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/cmake.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/cobol.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/cpp.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/cpph.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/cucumber.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/cython.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/delphi.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/deps.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/diff.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/dir-closed.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/dir-open.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/django.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/dlang.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/editorcfg.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/elm.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/elx.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/erb.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/eslint.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/excel.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/font.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/fortran.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/fsharp.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/fsproj.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/godot.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/graphql.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/helm.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/jar.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/java.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/jenkins.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/jupyter.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/key.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/less.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/license.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/lisp.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/locale.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/log.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/lua.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/make.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/manifest.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/maven.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/meson.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/nginx.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/nim.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/npm.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/org.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/patch.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/perl.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/perl6.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/pgsql.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/phpunit.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/pip.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/pkg.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/plsql.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/pp.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/prettier.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/prolog.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/protobuf.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/r.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/rake.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/reason.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/root-closed.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/root-open.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/ruby.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/scss.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/sql.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/sqlite.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/swagger.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/swift.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/toml.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/vim.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/wasm.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/xml.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/yarn.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vsc/zip.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/vue.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/warning.png
+#	удалено:       elpa/treemacs-20200524.2034/icons/default/yaml.png
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-async.el
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-async.elc
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-autoloads.el
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-bookmarks.el
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-bookmarks.elc
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-compatibility.el
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-compatibility.elc
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-core-utils.el
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-core-utils.elc
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-customization.el
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-customization.elc
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-diagnostics.el
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-diagnostics.elc
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-dirs-to-collapse.py
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-dom.el
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-dom.elc
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-extensions.el
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-extensions.elc
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-faces.el
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-faces.elc
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-filewatch-mode.el
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-filewatch-mode.elc
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-follow-mode.el
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-follow-mode.elc
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-fringe-indicator.el
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-fringe-indicator.elc
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-git-status.py
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-header-line.el
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-header-line.elc
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-icons.el
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-icons.elc
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-interface.el
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-interface.elc
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-logging.el
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-logging.elc
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-macros.el
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-macros.elc
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-mode.el
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-mode.elc
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-mouse-interface.el
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-mouse-interface.elc
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-persistence.el
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-persistence.elc
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-pkg.el
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-rendering.el
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-rendering.elc
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-scope.el
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-scope.elc
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-single-file-git-status.py
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-tag-follow-mode.el
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-tag-follow-mode.elc
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-tags.el
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-tags.elc
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-themes.el
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-themes.elc
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-visuals.el
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-visuals.elc
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-workspaces.el
+#	удалено:       elpa/treemacs-20200524.2034/treemacs-workspaces.elc
+#	удалено:       elpa/treemacs-20200524.2034/treemacs.el
+#	удалено:       elpa/treemacs-20200524.2034/treemacs.elc
+#	удалено:       elpa/treemacs-projectile-20200114.1715/treemacs-projectile-autoloads.el
+#	удалено:       elpa/treemacs-projectile-20200114.1715/treemacs-projectile-pkg.el
+#	удалено:       elpa/treemacs-projectile-20200114.1715/treemacs-projectile.el
+#	удалено:       elpa/treemacs-projectile-20200114.1715/treemacs-projectile.elc
+#	удалено:       helm-adaptive-history
+#	изменено:      init.el
+#	изменено:      lisp/my_init.el
+#	изменено:      lisp/my_packages.el
+#	изменено:      projectile-bookmarks.eld
+#	изменено:      recentf
+#
+# Неотслеживаемые файлы:
+#	.cache/
+#	.lsp-session-v1
+#	ac-comphist.dat
+#	auto-saves/.saves-125310-FlyBook~
+#	auto-saves/.saves-12971-FlyBook~
+#	auto-saves/.saves-147803-FlyBook~
+#	auto-saves/.saves-168251-FlyBook~
+#	auto-saves/.saves-27015-FlyBook~
+#	auto-saves/.saves-28933-FlyBook~
+#	auto-saves/.saves-44323-FlyBook~
+#	auto-saves/.saves-7489-FlyBook~
+#	backups/!home!liferooter!.bin!my_emacs.~1~
+#	backups/!home!liferooter!.bin!my_emacs.~2~
+#	backups/!home!liferooter!.bin!my_emacs.~3~
+#	backups/!home!liferooter!.bin!my_emacs.~4~
+#	backups/!home!liferooter!.bin!my_emacsclient.~1~
+#	backups/!home!liferooter!.bin!my_emacsclient.~2~
+#	backups/!home!liferooter!.config!autostart!disable-touchscreen.desktop.~1~
+#	backups/!home!liferooter!.emacs.d!.cache!treemacs-persist.~1~
+#	backups/!home!liferooter!.emacs.d!.cache!treemacs-persist.~27~
+#	backups/!home!liferooter!.emacs.d!.cache!treemacs-persist.~28~
+#	backups/!home!liferooter!.emacs.d!.cache!treemacs-persist.~29~
+#	backups/!home!liferooter!.emacs.d!.cache!treemacs-persist.~2~
+#	backups/!home!liferooter!.emacs.d!.cache!treemacs-persist.~30~
+#	backups/!home!liferooter!.emacs.d!.cache!treemacs-persist.~31~
+#	backups/!home!liferooter!.emacs.d!lisp!my_features.el.~10~
+#	backups/!home!liferooter!.emacs.d!lisp!my_features.el.~1~
+#	backups/!home!liferooter!.emacs.d!lisp!my_features.el.~2~
+#	backups/!home!liferooter!.emacs.d!lisp!my_features.el.~6~
+#	backups/!home!liferooter!.emacs.d!lisp!my_features.el.~7~
+#	backups/!home!liferooter!.emacs.d!lisp!my_features.el.~8~
+#	backups/!home!liferooter!.emacs.d!lisp!my_features.el.~9~
+#	backups/!home!liferooter!.emacs.d!lisp!my_ligatures.el.~19~
+#	backups/!home!liferooter!.emacs.d!lisp!my_ligatures.el.~1~
+#	backups/!home!liferooter!.emacs.d!lisp!my_ligatures.el.~20~
+#	backups/!home!liferooter!.emacs.d!lisp!my_ligatures.el.~21~
+#	backups/!home!liferooter!.emacs.d!lisp!my_ligatures.el.~22~
+#	backups/!home!liferooter!.emacs.d!lisp!my_ligatures.el.~23~
+#	backups/!home!liferooter!.emacs.d!lisp!my_ligatures.el.~2~
+#	backups/!home!liferooter!.emacs.d!recentf.~140~
+#	backups/!home!liferooter!.emacs.d!recentf.~141~
+#	backups/!home!liferooter!.emacs.d!recentf.~142~
+#	backups/!home!liferooter!.emacs.d!recentf.~143~
+#	backups/!home!liferooter!.emacs.d!recentf.~144~
+#	backups/!home!liferooter!.emacs.d!recentf.~1~
+#	backups/!home!liferooter!.emacs.d!recentf.~2~
+#	backups/!home!liferooter!.local!share!applications!emacs.desktop.~1~
+#	backups/!home!liferooter!.local!share!applications!emacsclient.desktop.~1~
+#	backups/!home!liferooter!Emacs Projects!exosceleton!core!controller.py.~10~
+#	backups/!home!liferooter!Emacs Projects!exosceleton!core!controller.py.~11~
+#	backups/!home!liferooter!Emacs Projects!exosceleton!core!controller.py.~12~
+#	backups/!home!liferooter!Emacs Projects!exosceleton!core!controller.py.~13~
+#	backups/!home!liferooter!Emacs Projects!exosceleton!core!controller.py.~1~
+#	backups/!home!liferooter!Emacs Projects!exosceleton!core!controller.py.~2~
+#	backups/!home!liferooter!Emacs Projects!exosceleton!core!controller.py.~9~
+#	backups/!home!liferooter!Emacs Projects!exosceleton!lib!message.py.~1~
+#	backups/!home!liferooter!Emacs Projects!exosceleton!lib!message.py.~2~
+#	backups/!home!liferooter!Emacs Projects!exosceleton!lib!message.py.~3~
+#	backups/!home!liferooter!Emacs Projects!exosceleton!lib!message.py.~4~
+#	elpa/doom-themes-20200531.1758/
+#	elpa/elpy-20200527.2021/
+#	elpa/highlight-indentation-20181204.839/
+#	elpa/hl-todo-20200103.1239/
+#	elpa/ivy-20200601.1105/
+#	elpa/lsp-mode-20200604.1645/
+#	elpa/lsp-ui-20200530.618/
+#	elpa/lua-mode-20200508.1316/
+#	elpa/magit-20200601.1812/
+#	elpa/markdown-mode-20200602.1433/
+#	elpa/mood-line-20200429.309/
+#	elpa/pip-requirements-20181027.1629/
+#	elpa/powerline-20200105.2053/
+#	elpa/pyvenv-20191202.1039/
+#	elpa/real-auto-save-20200505.1537/
+#	elpa/rich-minority-20190419.1136/
+#	elpa/solaire-mode-20200601.55/
+#	elpa/spaceline-20191230.1221/
+#	elpa/sudo-edit-20200517.2354/
+#	elpa/svg-mode-line-themes-20150425.2006/
+#	elpa/transient-20200601.1749/
+#	elpa/treemacs-20200601.1029/
+#	elpa/treemacs-projectile-20200530.2129/
+#	elpa/xmlgen-20170411.1317/
+#	eshell/
+#	lisp/my_features.el
+#	lisp/my_ligatures.el
+#	projectile.cache
+#	session.10f14eb962d0b2e17e15912930098436000000075220085
+#	tramp
+#

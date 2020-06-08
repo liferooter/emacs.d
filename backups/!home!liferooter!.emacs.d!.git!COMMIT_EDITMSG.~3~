@@ -1,0 +1,122 @@
+
+# Пожалуйста, введите сообщение коммита для ваших изменений. Строки,
+# начинающиеся с «#» будут проигнорированы, а пустое сообщение
+# отменяет процесс коммита.
+#
+# На ветке master
+# Ваша ветка обновлена в соответствии с «origin/master».
+#
+# Изменения, которые будут включены в коммит:
+#	изменено:      elpa/archives/gnu/archive-contents.signed
+#	изменено:      elpa/archives/melpa/archive-contents
+#	изменено:      init.el
+#	изменено:      lisp/my_packages.el
+#	изменено:      recentf
+#	изменено:      transient/history.el
+#
+# Неотслеживаемые файлы:
+#	.#recentf
+#	.cache/
+#	.lsp-session-v1
+#	ac-comphist.dat
+#	auto-saves/.saves-125310-FlyBook~
+#	auto-saves/.saves-12971-FlyBook~
+#	auto-saves/.saves-147803-FlyBook~
+#	auto-saves/.saves-172254-FlyBook~
+#	auto-saves/.saves-27015-FlyBook~
+#	auto-saves/.saves-28933-FlyBook~
+#	auto-saves/.saves-35601-FlyBook~
+#	auto-saves/.saves-44323-FlyBook~
+#	auto-saves/.saves-7489-FlyBook~
+#	backups/!home!liferooter!.bin!my_emacs.~1~
+#	backups/!home!liferooter!.bin!my_emacs.~2~
+#	backups/!home!liferooter!.bin!my_emacs.~3~
+#	backups/!home!liferooter!.bin!my_emacs.~4~
+#	backups/!home!liferooter!.bin!my_emacsclient.~1~
+#	backups/!home!liferooter!.bin!my_emacsclient.~2~
+#	backups/!home!liferooter!.config!autostart!disable-touchscreen.desktop.~1~
+#	backups/!home!liferooter!.config!telegramtui!telegramtui.ini.~1~
+#	backups/!home!liferooter!.emacs.d!.cache!treemacs-persist.~1~
+#	backups/!home!liferooter!.emacs.d!.cache!treemacs-persist.~2~
+#	backups/!home!liferooter!.emacs.d!.cache!treemacs-persist.~31~
+#	backups/!home!liferooter!.emacs.d!.cache!treemacs-persist.~32~
+#	backups/!home!liferooter!.emacs.d!.cache!treemacs-persist.~33~
+#	backups/!home!liferooter!.emacs.d!.cache!treemacs-persist.~34~
+#	backups/!home!liferooter!.emacs.d!.cache!treemacs-persist.~35~
+#	backups/!home!liferooter!.emacs.d!.git!COMMIT_EDITMSG.~2~
+#	backups/!home!liferooter!.emacs.d!diary.~1~
+#	backups/!home!liferooter!.emacs.d!lisp!my_features.el.~10~
+#	backups/!home!liferooter!.emacs.d!lisp!my_features.el.~1~
+#	backups/!home!liferooter!.emacs.d!lisp!my_features.el.~2~
+#	backups/!home!liferooter!.emacs.d!lisp!my_features.el.~6~
+#	backups/!home!liferooter!.emacs.d!lisp!my_features.el.~7~
+#	backups/!home!liferooter!.emacs.d!lisp!my_features.el.~8~
+#	backups/!home!liferooter!.emacs.d!lisp!my_features.el.~9~
+#	backups/!home!liferooter!.emacs.d!lisp!my_ligatures.el.~19~
+#	backups/!home!liferooter!.emacs.d!lisp!my_ligatures.el.~1~
+#	backups/!home!liferooter!.emacs.d!lisp!my_ligatures.el.~20~
+#	backups/!home!liferooter!.emacs.d!lisp!my_ligatures.el.~21~
+#	backups/!home!liferooter!.emacs.d!lisp!my_ligatures.el.~22~
+#	backups/!home!liferooter!.emacs.d!lisp!my_ligatures.el.~23~
+#	backups/!home!liferooter!.emacs.d!lisp!my_ligatures.el.~2~
+#	backups/!home!liferooter!.emacs.d!recentf.~156~
+#	backups/!home!liferooter!.emacs.d!recentf.~157~
+#	backups/!home!liferooter!.emacs.d!recentf.~158~
+#	backups/!home!liferooter!.emacs.d!recentf.~159~
+#	backups/!home!liferooter!.emacs.d!recentf.~160~
+#	backups/!home!liferooter!.emacs.d!recentf.~1~
+#	backups/!home!liferooter!.emacs.d!recentf.~2~
+#	backups/!home!liferooter!.local!share!applications!emacs.desktop.~1~
+#	backups/!home!liferooter!.local!share!applications!emacs.desktop.~2~
+#	backups/!home!liferooter!.local!share!applications!emacs.desktop.~3~
+#	backups/!home!liferooter!.local!share!applications!emacsclient.desktop.~1~
+#	backups/!home!liferooter!.nethackrc.~1~
+#	backups/!home!liferooter!Emacs Projects!exosceleton!core!controller.py.~10~
+#	backups/!home!liferooter!Emacs Projects!exosceleton!core!controller.py.~11~
+#	backups/!home!liferooter!Emacs Projects!exosceleton!core!controller.py.~12~
+#	backups/!home!liferooter!Emacs Projects!exosceleton!core!controller.py.~13~
+#	backups/!home!liferooter!Emacs Projects!exosceleton!core!controller.py.~1~
+#	backups/!home!liferooter!Emacs Projects!exosceleton!core!controller.py.~2~
+#	backups/!home!liferooter!Emacs Projects!exosceleton!core!controller.py.~9~
+#	backups/!home!liferooter!Emacs Projects!exosceleton!lib!message.py.~1~
+#	backups/!home!liferooter!Emacs Projects!exosceleton!lib!message.py.~2~
+#	backups/!home!liferooter!Emacs Projects!exosceleton!lib!message.py.~3~
+#	backups/!home!liferooter!Emacs Projects!exosceleton!lib!message.py.~4~
+#	backups/!home!liferooter!Emacs Projects!exosceleton!lib!message.py.~5~
+#	backups/!home!liferooter!Emacs Projects!exosceleton!lib!message.py.~6~
+#	backups/!home!liferooter!Emacs Projects!exosceleton!lib!message.py.~7~
+#	diary
+#	elpa/doom-themes-20200531.1758/
+#	elpa/elpy-20200527.2021/
+#	elpa/highlight-indentation-20181204.839/
+#	elpa/hl-todo-20200103.1239/
+#	elpa/ivy-20200601.1105/
+#	elpa/lsp-mode-20200604.1645/
+#	elpa/lsp-ui-20200530.618/
+#	elpa/lua-mode-20200508.1316/
+#	elpa/magit-20200601.1812/
+#	elpa/markdown-mode-20200602.1433/
+#	elpa/mood-line-20200429.309/
+#	elpa/multiple-cursors-20191210.1759/
+#	elpa/pip-requirements-20181027.1629/
+#	elpa/powerline-20200105.2053/
+#	elpa/pyvenv-20191202.1039/
+#	elpa/real-auto-save-20200505.1537/
+#	elpa/rich-minority-20190419.1136/
+#	elpa/solaire-mode-20200601.55/
+#	elpa/spaceline-20191230.1221/
+#	elpa/sudo-edit-20200517.2354/
+#	elpa/svg-mode-line-themes-20150425.2006/
+#	elpa/transient-20200601.1749/
+#	elpa/treemacs-20200601.1029/
+#	elpa/treemacs-projectile-20200530.2129/
+#	elpa/xmlgen-20170411.1317/
+#	eshell/
+#	lisp/my_features.el
+#	lisp/my_ligatures.el
+#	projectile.cache
+#	session.101e0a207cb61be896159138652524961000000946100143
+#	session.10aa16f10b1c51ab6b159152448688224000000074670085
+#	session.10f14eb962d0b2e17e15912930098436000000075220085
+#	tramp
+#

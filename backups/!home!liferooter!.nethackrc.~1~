@@ -1,0 +1,8 @@
+OPTIONS=altmeta,color,menucolors,!autopickup,male,catname:Tiger,dogname:Sirius,horsename:Flame,name:Gothlieb
+
+MENUCOLOR=".* cursed .*"=orange&bold
+MENUCOLOR=".* unholy .*"=orange
+MENUCOLOR=".* blessed .*"=cyan&bold
+MENUCOLOR=".* holy .*"=cyan
+MENUCOLOR=".* uncursed .*"=green
+MENUCOLOR="gold piece"=yellow

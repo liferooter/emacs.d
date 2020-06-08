@@ -1,0 +1,21 @@
+import json
+
+
+class Message:
+    def __init__(self, json_string):
+        self.json = json_string
+
+    @property
+    def dict(self):
+        return json.loads(self.__json)
+
+    @dict.setter
+    def dict(self, value):
+        self.json = json.dumps()
+
+    @property
+    def username(self):
+        return self.dict['username']
+
+    def setter()
+    

@@ -1,0 +1,5 @@
+* Default
+** gotanks
+ - path :: ~/Emacs Projects/gotanks
+** .emacs.d
+ - path :: ~/.emacs.d

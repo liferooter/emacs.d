@@ -1,0 +1,6 @@
+;;; my_features.el --- All my hand-written features
+
+;;; Commentary:
+;;; Define all your new Emacs features here
+
+(provide 'my_features)

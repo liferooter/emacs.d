@@ -1,0 +1,38 @@
+;;; my_features.el --- All my hand-written features
+
+;;; Commentary:
+;;; Define all your new Emacs features here
+
+;;; Code:
+
+;; Light/Dark GTK theme
+(defun set-emacs-frames (variant)
+  (dolist (frame (frame-list))
+    (let* ((window-id (frame-parameter frame 'outer-window-id))
+	   (id (string-to-number window-id))
+	   (cmd (format "xprop -id 0x%x -f _GTK_THEME_VARIANT 8u -set _GTK_THEME_VARIANT \"%s\""
+			id variant)))
+      (call-process-shell-command cmd))))
+
+(defun set-emacs-theme-light ()
+  (interactive)
+  (load-theme 'solarized-light t)
+  (set-emacs-frames "light"))
+
+(defun set-emacs-theme-dark ()
+  (interactive)
+  (load-theme 'solarized-dark t)
+  (set-emacs-frames "dark"))
+
+(if (window-system)
+    (set-emacs-theme-light))
+
+;; Start server if not started
+
+(require 'server)
+    (unless (server-running-p)
+        (server-start))
+
+
+(provide 'my_features)
+;;; my_features.el ends here

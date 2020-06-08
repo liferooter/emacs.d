@@ -1,0 +1,16 @@
+""" Controller --- userbot modules controller"""
+
+import json
+import queue
+
+
+class Controller:
+    """Main controller class."""
+    def __init__(self):
+        self.messages = queue.Queue()
+
+
+class Module:
+    """Module class."""
+    def __init__(self):
+        pass

@@ -59,6 +59,8 @@
 (require 'lsp-pyls)
 (require 'lsp-go)
 (require 'dap-mode)
+(require 'dap-gdb-lldb)
+(require 'dap-python)
 
 (setq lsp-keymap-prefix "C-c l")
 (setq gc-cons-threshold 100000000)
@@ -68,6 +70,13 @@
 
 (add-hook 'python-mode-hook #'lsp)
 (add-hook 'go-mode #'lsp)
+(add-hook 'c++-mode-hook #'lsp)
+(add-hook 'c-mode-hook #'lsp)
+(add-hook 'dap-stopped-hook
+          (lambda (arg) (call-interactively #'dap-hydra)))
+
+;; Chess
+(require 'chess)
 
 
 (provide 'my_packages)

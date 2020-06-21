@@ -1,2 +1,109 @@
 sudo su
 exit
+cd go/
+ls
+cd src/
+ls
+mkdir -p github.com/liferooter/fantastic-snipers
+ls
+cd github.com/liferooter/fantastic-snipers/
+ls
+git init
+touch README.md CHANGELOG main.go
+emacsclient main.go
+exit
+./a.out
+ls
+tar -xf xyu.gz
+gunzip xyu.gz
+ls
+file xyu
+mv xyu xyu.mp4
+./a.out xyu.mp4 0 1024
+clear
+./a.out xyu.mp4 0 1024
+./
+./
+clear
+./a.out xyu.mp4 1 1024
+./a.out xyu.mp4 1 10
+sudo ebuild anbox-master.ebuild clean merge
+exit
+sudo ebuild anbox-master.ebuild clean merge
+wgetpaste anbox-master.ebuild
+ebuild anbox-master.ebuild clean mergeebuild anbox-master.ebuild clean mergeebuild anbox-master.ebuild clean mergeebuild anbox-master.ebuild clean merge
+ls
+mv anbox-master.ebuild anbox-9999.ebuild
+file xyufile xyu
+ebuild anbox-9999.ebuild clean merge
+pushd .
+repoman manifest
+popd
+ebuild anbox-9999.ebuild clean merge
+mv anbox-9999.ebuild anbox-master.ebuild
+pushd .
+repoman manifest
+mv anbox-master.ebuild anbox-9999.ebuild
+ls
+pushd .
+repoman manifest
+popd
+ebuild anbox-9999.ebuild clean merge
+ebuild anbox-9999.ebuild clean merge
+pushd .
+repoman manifest
+ls
+mv anbox-master.ebuild anbox-9999.ebuild
+pushd .
+repoman manifest
+popd
+ebuild anbox-9999.ebuild clean merge
+ebuild anbox-9999.ebuild unpack
+ebuild anbox-9999.ebuild unpack
+pushd .
+repoman manifest
+popd
+ebuild anbox-9999.ebuild unpack
+pushd .
+repoman manifest
+popd
+ebuild anbox-9999.ebuild unpack
+rm -r /var/tmp/portage/app-emulation/
+sudo rm -r /var/tmp/portage/app-emulation/
+sudo ebuild anbox-9999.ebuild unpack
+cd /var/tmp/portage/app-emulation/anbox-9999/
+ls
+sudo su
+exit
+ls
+sudo su
+fish
+ls
+ebuild anbox-9999.ebuild
+ebuild anbox-9999.ebuild unpack
+sudo rm -r /var/tmp/portage/app-emulation/
+ebuild anbox-9999.ebuild unpack
+ls /var/tmp/portage/app-emulation/anbox-9999/
+sudo su
+clear
+ls
+ebuild anbox-9999.ebuild clean merge
+ebuild anbox-9999.ebuild clean compile
+cd /var/tmp/portage/
+l
+exa
+cd app-emulation/
+ls
+exa
+cd anbox-9999/
+ls
+echo $USER
+cd .emacs.d/
+ls
+rm diary
+ls
+exit
+ls
+file diary
+mv diary diary.gpg
+exit

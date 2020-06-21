@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/Emacs Projects/exosceleton/" "/usr/src/linux-5.4.38-gentoo/")
+("~/.emacs.d/" "/var/db/repos/liferooter/" "~/go/src/github.com/liferooter/fantastic-snipers/" "~/Emacs Projects/gotanks/" "~/Tasks/Classes/" "~/Emacs Projects/exosceleton/" "/usr/src/linux-5.4.38-gentoo/")

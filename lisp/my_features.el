@@ -9,10 +9,6 @@
 
 ;; Start server if not started
 
-(require 'server)
-(unless (server-running-p)
-  (server-start))
-
 (require 'my_ligatures) ;; Ligatures support
 
 (provide 'my_features)

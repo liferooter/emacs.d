@@ -1,0 +1,13 @@
+;; Object Tasks
+;; EDE Project Files are auto generated: Do Not Edit
+(ede-proj-project "Tasks"
+  :file "Project.ede"
+  :name "Tasks"
+  :targets
+  (list
+    (ede-proj-target-makefile-program "05-D"
+      :object-name "05-D"
+      :name "05-D"
+      :path ""
+      :source '("05-D.c")))
+  :object-name "Tasks")

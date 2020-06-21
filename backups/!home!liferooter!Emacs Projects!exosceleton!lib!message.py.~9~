@@ -1,0 +1,21 @@
+"""Library used in OpenUserbot to implement OpenUserbot protocol."""
+
+import json
+from collections import namedtuple
+
+
+class Message(namedtuple('Message', ['text', 'sender', 'chat_id', 'is_group', ''])):  # TODO
+    """Message action format."""
+
+    def __init__(self, json_string):
+        """Create new message JSON object."""
+        self.dict = json.loads(json_string)
+
+    @property
+    def json(self):
+        """Message properties dictation."""
+        return json.dumps(self.dict)
+
+    @json.setter
+    def json(self, value):
+        self.dict = json.dumps(value)

@@ -5,3 +5,5 @@
  - path :: ~/.emacs.d
 ** exosceleton
  - path :: ~/Emacs Projects/exosceleton
+** Tasks
+ - path :: ~/Tasks

@@ -1,0 +1,180 @@
+#include <libavformat/avformat.h>
+#include <libavcodec/avcodec.h>
+#include <libswscale/swscale.h>
+#include <libavutil/frame.h>
+#include <libavutil/imgutils.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <math.h>
+
+void obrabotat_frame(int num_bytes, uint8_t* buffer, long long *sum) {
+    for (int i = 0; i < num_bytes; ++i) {
+        sum[i] += buffer[i];
+    }
+}
+
+void convert_to_RGB(AVCodecContext *c_ctx, struct SwsContext *sws_ctx, AVFrame *frame, AVFrame *new_frame) {
+    sws_scale(sws_ctx, (const uint8_t * const *) frame->data, frame->linesize, 0, c_ctx->height, new_frame->data, new_frame->linesize);
+}
+
+void SaveFrame(AVFrame *pFrame, int width, int height, char* filename) {
+  FILE *pFile;
+  char szFilename[32];
+  int  y;
+
+  // Open file
+  sprintf(szFilename, "%s.ppm", filename);
+  pFile=fopen(szFilename, "wb");
+  if(pFile==NULL)
+    return;
+
+  // Write header
+  fprintf(pFile, "P6\n%d %d\n255\n", width, height);
+
+  // Write pixel data
+  for(y=0; y<height; y++)
+    fwrite(pFrame->data[0]+y*pFrame->linesize[0], 1, width*3, pFile);
+
+  // Close file
+  fclose(pFile);
+}
+
+int main(int argc, char *argv[]) {
+    const char *filename;
+    int start_frame, end_frame;
+    int amount;
+    double threshold = 5000;
+    int stream_index;
+    AVFormatContext *f_ctx = avformat_alloc_context();
+    AVCodecContext *c_ctx;
+    struct SwsContext *sws_ctx = NULL;
+    AVCodec *c;
+    AVPacket *pkt;
+    AVFrame *frame, *frame_RGB;
+    AVStream *stream;
+    if (argc < 4) {
+        printf("Usage: %s <filename> <start frame number> <end frame number> [<threshold>]\n", argv[0]);
+        return -1;
+    }
+    filename = argv[1];
+    start_frame = atoi(argv[2]);
+    end_frame = atoi(argv[3]);
+    amount = end_frame - start_frame + 1;
+    if (argc >= 5) {
+        threshold = atof(argv[4]);
+    }
+    int ret = avformat_open_input(&f_ctx, filename, NULL, NULL);
+    if (ret < 0) {
+        fprintf(stderr, "Failed to open specified file\n");
+        return -1;
+    }
+    stream_index = av_find_best_stream(f_ctx, AVMEDIA_TYPE_VIDEO, -1, -1, NULL, 0);
+    if (stream_index >= 0) {
+        printf("Everything is OK! Stream index is %d.\n", ret);
+    } else {
+        if (stream_index == AVERROR_STREAM_NOT_FOUND) {
+            fprintf(stderr, "No video stream found in specified file\n");
+        } else if (stream_index == AVERROR_DECODER_NOT_FOUND) {
+            fprintf(stderr, "No decoder found for found video stream\n");
+        }
+        return -1;
+    }
+    
+    stream = f_ctx->streams[stream_index];
+    c = avcodec_find_decoder(stream->codecpar->codec_id);
+    c_ctx = avcodec_alloc_context3(c);
+    ret = avcodec_parameters_to_context(c_ctx, stream->codecpar);
+    if (ret < 0) {
+        fprintf(stderr, "Failed to fill codec context\n");
+        return -1;
+    }
+    ret = avcodec_open2(c_ctx, c, NULL);
+    if (ret < 0) {
+        fprintf(stderr, "Failed to open codec\n");
+        return -1;
+    }
+    printf("Everything's great, opened %s codec\n", c->long_name);
+    pkt = av_packet_alloc();
+    frame = av_frame_alloc();
+    frame_RGB = av_frame_alloc();
+    int num_bytes = av_image_get_buffer_size(AV_PIX_FMT_RGB24, c_ctx->width, c_ctx->height, 1);
+    uint8_t *buffer = (uint8_t*) malloc(num_bytes * sizeof(uint8_t));
+    ret = av_image_fill_arrays(frame_RGB->data, frame_RGB->linesize, buffer, AV_PIX_FMT_RGB24, c_ctx->width, c_ctx->height, 1);
+    if (ret < 0) {
+        fprintf(stderr, "Failed to fill image arrays\n");
+        return -1;
+    }
+    frame_RGB->format = AV_PIX_FMT_RGB24;
+    frame_RGB->width = c_ctx->width;
+    frame_RGB->height = c_ctx->height;
+    long long *sum = (long long*) calloc(num_bytes, sizeof(long long));
+    long double *dispersion = (long double*) calloc(num_bytes + 1, sizeof(long double));
+    uint8_t *frames_buf = (uint8_t*) malloc(num_bytes * amount * sizeof(uint8_t) + 1);
+    uint8_t **frames = (uint8_t**) malloc(amount * sizeof(uint8_t*));
+    for (int i = 0; i < amount; ++i) {
+        frames[i] = frames_buf + num_bytes * i;
+    }
+    while (av_read_frame(f_ctx, pkt) >= 0) {
+        if (pkt->stream_index == stream_index) {
+            ret = avcodec_send_packet(c_ctx, pkt);
+            if (ret < 0) {
+                fprintf(stderr, "Some error while sending packet\n");
+            }
+            while (ret >= 0) {
+                ret = avcodec_receive_frame(c_ctx, frame);
+                if (ret == AVERROR(EAGAIN) || ret == AVERROR_EOF) {
+                    break;
+                } else if (ret < 0) {
+                    fprintf(stderr, "Some error while receiving frame\n");
+                }
+                if (sws_ctx == NULL) {
+                    sws_ctx = sws_getContext(c_ctx->width, c_ctx->height, c_ctx->pix_fmt, c_ctx->width, c_ctx->height, AV_PIX_FMT_RGB24, SWS_BICUBIC, NULL, NULL, NULL);
+                }
+                if (ret >= 0 && c_ctx->frame_number >= start_frame && c_ctx->frame_number <= end_frame) {
+                    convert_to_RGB(c_ctx, sws_ctx, frame, frame_RGB);
+                    memcpy(frames[c_ctx->frame_number - start_frame], buffer, num_bytes * sizeof(uint8_t));
+                    obrabotat_frame(num_bytes, buffer, sum);
+                }
+            }
+        }
+    }
+    sws_freeContext(sws_ctx);
+    for (int frame_number = 0; frame_number < amount; ++frame_number) {
+        for (int y = 0; y < c_ctx->height; ++y) {
+            for (int x = 0; x < c_ctx->width; ++x) {
+                int index = y * frame_RGB->linesize[0] + x * 3;
+                for (int k = 0; k < 3; ++k) {
+                    long double a = (frames[frame_number][index + k] - (long double) sum[index + k] / amount);
+                    dispersion[index + k] += a * a;
+                }
+                if (frame_number == amount - 1) {
+                    char needed = 1;
+                    for (int k = 0; k < 3; ++k) {
+                        if (dispersion[index + k] / amount > threshold) {
+                            needed = 0;
+                        }
+                        buffer[index + k] = 0;
+                    }
+                    if (needed) {
+                        for (int k = 0; k < 3; ++k) {
+                            buffer[index + k] = sum[index + k] / amount;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    SaveFrame(frame_RGB, c_ctx->width, c_ctx->height, "output");
+    free(sum);
+    free(frames);
+    free(frames_buf);
+    free(dispersion);
+    av_free(buffer);
+    av_free(frame_RGB);
+    av_free(frame);
+    av_free(pkt);
+    avcodec_close(c_ctx);
+    return 0;
+}
+
